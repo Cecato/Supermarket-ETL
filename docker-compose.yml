@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  spark_app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+      - mongo
+    environment:
+      - SPARK_LOCAL_IP=spark_app
+
+  postgres:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: vendas_db
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
