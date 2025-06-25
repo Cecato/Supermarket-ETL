@@ -1,3 +1,4 @@
 pyspark
 pymongo
 pyyaml
+psycopg2-binary

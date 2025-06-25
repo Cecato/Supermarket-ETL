@@ -2,7 +2,7 @@
 *.csv
 artifacts/
 bad_sales_ids.parquet/
-
+vendas_parquet/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
