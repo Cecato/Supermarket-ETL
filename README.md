@@ -1,7 +1,11 @@
-# Supermarket-ETL
+# setup
+1. Coloque os arquivos Brutos ( produtos.csv, vendas.csv, clientes.json) em Data/
 
-1- docker-compose build
+# Docker
+1. docker-compose build
 
-2- docker-compose up -d
+2. docker-compose up -d
 
-3- docker ps
+3. docker ps
+
+4. 

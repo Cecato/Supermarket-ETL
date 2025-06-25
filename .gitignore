@@ -1,4 +1,7 @@
-data/
+*.json
+*.csv
+artifacts/
+bad_sales_ids.parquet/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
